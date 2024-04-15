@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.GenericUtility.ListenerImplimentation"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="UserModule.UserCanAddTheProductToShoppingCartTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="openBrowser"/>
+          <include name="UserCanAddTheProductToShoppingCartTest"/>
+          <include name="DBconnectionCl"/>
+          <include name="DBconnect"/>
+        </methods>
+      </class> <!-- UserModule.UserCanAddTheProductToShoppingCartTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="Adminmodule.AdminCanAbleCreateTheProductAndUserCanAbleToseeTheProductTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="openBrowser"/>
+          <include name="DBconnectionCl"/>
+          <include name="DBconnect"/>
+          <include name="AdminCanApprovetheProductTest"/>
+        </methods>
+      </class> <!-- Adminmodule.AdminCanAbleCreateTheProductAndUserCanAbleToseeTheProductTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
